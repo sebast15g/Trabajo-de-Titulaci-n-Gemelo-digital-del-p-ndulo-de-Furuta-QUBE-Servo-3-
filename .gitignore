@@ -1,0 +1,29 @@
+# ---- Artefactos de build de Simulink / MATLAB ----
+slprj/
+*.slxc
+*.slx.autosave
+*.slx.original
+*.autosave
+*.asv
+*.m~
+codegen/
+*_grt_rtw/
+*_ert_rtw/
+*_sfun_rtw/
+
+# ---- Codegen de QUARC / tiempo real ----
+*_quarc_win64/
+*.rt-win64
+
+# ---- MEX compilados (se regeneran desde el .m) ----
+*.mexw64
+*.mexa64
+*.mexmaci64
+
+# ---- Sistema operativo / editores ----
+.DS_Store
+Thumbs.db
+*.tmp
+
+# ---- Carpeta de descarte (revisar y borrar manualmente) ----
+_to_delete/

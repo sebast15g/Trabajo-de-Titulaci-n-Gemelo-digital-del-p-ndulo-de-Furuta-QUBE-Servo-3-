@@ -1,0 +1,9 @@
+--- Iniciando Análisis de Datos del Qube Servo ---
+
+Archivo cargado exitosamente. 30001 muestras encontradas.
+*Nota: El motor no alcanzó altas velocidades. Usando aproximación para Coulomb.
+===================================================
+  VALORES LISTOS PARA EL BLOQUE DE SIMSCAPE
+===================================================
+Breakaway friction torque: 1.035726e-02 N*m
+Breakaway friction velocity: 4.685660e-01 rad/s

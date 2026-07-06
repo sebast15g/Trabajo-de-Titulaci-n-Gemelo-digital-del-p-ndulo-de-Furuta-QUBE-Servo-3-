@@ -1,0 +1,2 @@
+run,cpu_step_us,tet_running_max_us,tet_box_max_us,carga_pct,overruns,status
+E1_500,500.000,4.918,6.189,1.238,0,running

@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "Gemelo digital del péndulo invertido de Furuta (Quanser QUBE-Servo 3) — código, datos y modelos"
+message: "Si utiliza este repositorio, por favor cite la tesis asociada (preferred-citation)."
+type: software
+authors:
+  - family-names: "Bermeo García"
+    given-names: "Pablo Andrés"
+  - family-names: "Guazhima Fernández"
+    given-names: "Sebastián Stalin"
+license: MIT
+year: 2026
+preferred-citation:
+  type: thesis
+  title: "Evaluación del impacto de la simulación en tiempo real en la fidelidad de un gemelo digital aplicado al péndulo invertido QUBE-Servo 3"
+  thesis-type: "Trabajo de titulación"
+  authors:
+    - family-names: "Bermeo García"
+      given-names: "Pablo Andrés"
+    - family-names: "Guazhima Fernández"
+      given-names: "Sebastián Stalin"
+  institution:
+    name: "Universidad de Cuenca, Facultad de Ingeniería"
+  year: 2026

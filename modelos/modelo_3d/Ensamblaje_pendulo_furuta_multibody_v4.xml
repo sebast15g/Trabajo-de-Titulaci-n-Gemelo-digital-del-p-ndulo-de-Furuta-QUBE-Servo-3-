@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="06/01/26||07:32:59" using="Simscape Multibody Link Version 7.4" from="SolidWorks 33.5.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Ensamblaje_pendulo_furuta_multibody_v2" uid="Ensamblaje_pendulo_furuta_multibody_v2" version="241">
+<AssemblyFile name="Ensamblaje_pendulo_furuta_multibody_v2.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="base_qube-1" uid="base_qube-1" entityUid="base_qube*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="hub_soporte_enc-2" uid="hub_soporte_enc-2" entityUid="hub_soporte_enc" rigid="true">
+<Transform>
+<Rotation>1.04744440165294e-14 0 -1 0 1 0 1 0 1.04744440165294e-14</Rotation>
+<Translation>0 0.10059999999999999 0</Translation>
+</Transform>
+<Instance name="Plastico_enc-1" uid="Plastico_enc-1" entityUid="Plastico_enc*:*Predeterminado">
+<Transform>
+<Rotation>1 0 2.8002253293912795e-13 0 1 -1.081973052818874e-12 -2.8002253293912795e-13 1.081973052818874e-12 1</Rotation>
+<Translation>0.025600000000000102 0.021750000000000158 -0.00060000000002066484</Translation>
+</Transform>
+</Instance>
+<Instance name="Cilindro_enc-1" uid="Cilindro_enc-1" entityUid="Cilindro_enc*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.00010000000000000829 0.011399999999999993 -9.9999999999923907e-05</Translation>
+</Transform>
+</Instance>
+<Instance name="disco_hub-3" uid="disco_hub-3" grounded="true" entityUid="disco_hub*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="brazo_pendulo-4" uid="brazo_pendulo-4" entityUid="brazo_pendulo" rigid="true">
+<Transform>
+<Rotation>8.1754760232083849e-13 -0.00090634741334490859 0.99999958926709875 0 -0.99999958926709875 -0.00090634741334490859 1 7.4098215464820627e-16 -8.1754726652713984e-13</Rotation>
+<Translation>2.1436628513948897e-14 0.1223499999999995 0.026200000000000286</Translation>
+</Transform>
+<Instance name="pendulo_r-1" uid="pendulo_r-1" entityUid="pendulo_r*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 0.9999990845504213 -0.0013531069134731098 0 0.001353106913473096 0.9999990845504213</Rotation>
+<Translation>0.057999999999999795 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="brazo-1" uid="brazo-1" entityUid="brazo*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+</Instance>
+</InstanceTree>
+<Constraints>
+<UnknownConstraint name="Coincidente1">
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>base_qube-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>Ensamblaje_pendulo_furuta_multibody_v2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+</ConstraintGeometry>
+</UnknownConstraint>
+<Concentric name="Concéntrica1">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>base_qube-1</Uid>
+</InstancePath>
+<Position>0 0.10059999999999999 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>hub_soporte_enc-2</Uid>
+<Uid>disco_hub-3</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_qube-1</Uid>
+</InstancePath>
+<Position>0 0.10059999999999999 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>hub_soporte_enc-2</Uid>
+<Uid>disco_hub-3</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>hub_soporte_enc-2</Uid>
+<Uid>Plastico_enc-1</Uid>
+</InstancePath>
+<Position>0.00060000000000000331 0 0.00059999999999968444</Position>
+<Axis>1 0 -5.2705062536517744e-13</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>brazo_pendulo-4</Uid>
+<Uid>brazo-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>hub_soporte_enc-2</Uid>
+<Uid>Plastico_enc-1</Uid>
+</InstancePath>
+<Position>0.00060000000000000331 0 0.00059999999999968444</Position>
+<Axis>1 0 -5.2705062536517744e-13</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>brazo_pendulo-4</Uid>
+<Uid>brazo-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+<Frames>
+</Frames>
+</RootAssembly>
+<Assemblies>
+<Assembly name="hub_soporte_enc" uid="hub_soporte_enc" version="239">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="hub_soporte_enc.SLDASM" type="SolidWorks Assembly"/>
+<Frames>
+</Frames>
+</Assembly>
+<Assembly name="brazo_pendulo" uid="brazo_pendulo" version="124">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="brazo_pendulo.SLDASM" type="SolidWorks Assembly"/>
+<Frames>
+</Frames>
+</Assembly>
+</Assemblies>
+<Parts>
+<Part name="Cilindro_enc" uid="Cilindro_enc*:*Predeterminado" version="123">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Cilindro_enc.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.059000000000000004</Mass>
+<CenterOfMass>0.00079889041836632511 0.011031384335648129 9.9999999999361654e-05</CenterOfMass>
+<Inertia>5.4484140974130031e-06 9.8552080862983699e-06 9.4219733031571932e-06 0 0 2.8096566021152723e-08</Inertia>
+</MassProperties>
+<GeometryFile name="Cilindro_enc_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.8666666666666667" g="0.90980392156862744" b="1" a="1"/>
+<Diffuse r="0.8666666666666667" g="0.90980392156862744" b="1" a="1"/>
+<Specular r="0.43333333333333335" g="0.45490196078431372" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+<Frames>
+</Frames>
+</Part>
+<Part name="Plastico_enc" uid="Plastico_enc*:*Predeterminado" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Plastico_enc.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0050000000000000001</Mass>
+<CenterOfMass>-0.00046334854224973609 0 0.00060000000000024541</CenterOfMass>
+<Inertia>5.1723211090866784e-07 3.2626361266958758e-07 3.2626361266958742e-07 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Plastico_enc_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+<Frames>
+</Frames>
+</Part>
+<Part name="base_qube" uid="base_qube*:*Predeterminado" version="305">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="base_qube.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.1394000000000002</Mass>
+<CenterOfMass>2.3712695958723553e-08 0.05081899437254507 -7.9124829827644188e-06</CenterOfMass>
+<Inertia>0.0019690478445170603 0.001975240513439269 0.0019689117047885212 4.9851912559494101e-07 7.0065474351376913e-10 -1.6241960225148515e-09</Inertia>
+</MassProperties>
+<GeometryFile name="base_qube_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.8666666666666667" g="0.90980392156862744" b="1" a="1"/>
+<Diffuse r="0.8666666666666667" g="0.90980392156862744" b="1" a="1"/>
+<Specular r="0.43333333333333335" g="0.45490196078431372" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+<Frames>
+</Frames>
+</Part>
+<Part name="brazo" uid="brazo*:*Predeterminado" version="109">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="brazo.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.035500000000000004</Mass>
+<CenterOfMass>0.030688101306569883 0 0</CenterOfMass>
+<Inertia>1.9621479196098537e-07 1.2664927363780717e-05 1.2664927363780717e-05 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="brazo_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.7803921568627451" g="0.7803921568627451" b="0.7803921568627451" a="1"/>
+<Diffuse r="0.7803921568627451" g="0.7803921568627451" b="0.7803921568627451" a="1"/>
+<Specular r="0.39019607843137255" g="0.39019607843137255" b="0.39019607843137255" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+<Frames>
+</Frames>
+</Part>
+<Part name="disco_hub" uid="disco_hub*:*Predeterminado" version="117">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="disco_hub.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0106</Mass>
+<CenterOfMass>5.5310094314357126e-09 0.10751946629640556 5.5239784457908444e-09</CenterOfMass>
+<Inertia>3.7860520808395463e-07 6.2042306394581947e-07 3.7860520862878904e-07 -2.3932262799000592e-13 -2.1416389378377851e-13 -2.3962724067437071e-13</Inertia>
+</MassProperties>
+<GeometryFile name="disco_hub_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.8666666666666667" g="0.90980392156862744" b="1" a="1"/>
+<Diffuse r="0.8666666666666667" g="0.90980392156862744" b="1" a="1"/>
+<Specular r="0.43333333333333335" g="0.45490196078431372" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+<Frames>
+</Frames>
+</Part>
+<Part name="pendulo_r" uid="pendulo_r*:*Predeterminado" version="122">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="pendulo_r.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.024</Mass>
+<CenterOfMass>-5.6102955110515707e-09 0.057911160783720314 1.350114608184721e-08</CenterOfMass>
+<Inertia>3.1701284715889598e-05 2.7235491912989899e-07 3.1697908977652125e-05 1.4880544249452975e-11 1.1519840449742738e-12 -5.4362841943157077e-12</Inertia>
+</MassProperties>
+<GeometryFile name="pendulo_r_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.71764705882352942" g="0.035294117647058823" b="0" a="1"/>
+<Diffuse r="0.71764705882352942" g="0.035294117647058823" b="0" a="1"/>
+<Specular r="0.35882352941176471" g="0.017647058823529412" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+<Frames>
+</Frames>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
