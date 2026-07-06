@@ -78,10 +78,10 @@ TESIS_FINALES/
 ├── codigo/            Scripts y funciones de MATLAB, por etapa
 │   ├── parametros_furuta.m        Parámetros físicos finales (cargar primero)
 │   ├── referencia/                Parámetros de referencia de Quanser
-│   ├── identificacion/            Identificación por ensayo aislado (§4.3)
+│   ├── identificacion/            Identificación por ensayo aislado 
 │   ├── validacion/                Validación de fricción y retorno del cable
-│   ├── modelo_control/            Modelo analítico M1, EKF y control (§4.4–§4.6)
-│   └── gemelo/                    Real vs. 3D y gemelo bidireccional (§4.8)
+│   ├── modelo_control/            Modelo analítico M1, EKF y control 
+│   └── gemelo/                    Real vs. 3D y gemelo bidireccional 
 ├── datos/             Datos de entrada y registros (.mat/.csv), por tema
 ├── figuras/           Figuras del Desarrollo y del Anexo, por tema
 ├── modelos/           Modelos de Simulink/Simscape (.slx), por tema
